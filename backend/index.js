@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:true}));
 import puppeteer from "puppeteer";
 
 
-let store;
+let store=[];
 
 (async()=>{
     const browser=await puppeteer.launch({headless:true});
@@ -33,7 +33,7 @@ let store;
 
 })();
 
-let textbooks;
+let textbooks=[];
 
 (async()=>{
     const browser=await puppeteer.launch({headless:true});
@@ -57,7 +57,7 @@ let textbooks;
 
 })();
 
-let games;
+let games=[];
 
 (async()=>{
     const browser=await puppeteer.launch({headless:true});
@@ -81,7 +81,7 @@ let games;
 
 })();
 
-let movies;
+let movies=[];
 
 (async()=>{
     const browser=await puppeteer.launch({headless:true});
