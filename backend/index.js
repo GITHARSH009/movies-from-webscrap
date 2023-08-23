@@ -12,7 +12,7 @@ import puppeteer from "puppeteer";
 let store;
 
 (async()=>{
-    const browser=await puppeteer.launch({headless:false});
+    const browser=await puppeteer.launch({headless:true});
     const page=await browser.newPage();
     await page.goto("https://www.bookstores.com/browse/books/",{
         waitUntil:'load',
@@ -36,7 +36,7 @@ let store;
 let textbooks;
 
 (async()=>{
-    const browser=await puppeteer.launch({headless:false});
+    const browser=await puppeteer.launch({headless:true});
     const page=await browser.newPage();
     await page.goto("https://www.bookstores.com/browse/textbooks/",{
         waitUntil:'load',
@@ -60,7 +60,7 @@ let textbooks;
 let games;
 
 (async()=>{
-    const browser=await puppeteer.launch({headless:false});
+    const browser=await puppeteer.launch({headless:true});
     const page=await browser.newPage();
     await page.goto("https://www.bookstores.com/browse/games/",{
         waitUntil:'load',
@@ -84,7 +84,7 @@ let games;
 let movies;
 
 (async()=>{
-    const browser=await puppeteer.launch({headless:false});
+    const browser=await puppeteer.launch({headless:true});
 
     const page=await browser.newPage();
 
