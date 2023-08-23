@@ -1,0 +1,40 @@
+.heading{
+  background-color: rgb(193, 82, 82);
+  color: aqua;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  margin-top: 0rem;
+  text-align: center;
+  padding: 0.7rem;
+}
+.App{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+.Rowi .har{
+  width: 15rem;
+  height: 15rem;
+  margin: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.Rowi h2{
+   font-size: 1rem;
+   color: blue;
+   margin-left: 1.6rem;
+}
+
+.cardi{
+  width: 14rem;
+  height: 14rem;
+  cursor: pointer;
+  margin: 0.46rem;
+  transition: transform 0.5s;
+  &:hover{
+      transform: translate(-8px) scale(1.1);
+  }
+}
